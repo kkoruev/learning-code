@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library SYSTEM "library.dtd">
+<library>
+    <publishing_houses>
+        <publishing_house publishing_house_id="ph1">
+            <publishing_house_name> NAME_HERE </publishing_house_name> 
+            <year> </year>
+            <address> </adress>
+            <email> </email>
+            <book_id> ???? </book_id>
+        </publishing_house>
+    </publishing_houses>
+    <books>
+        <book book_id="b1"  publishing_house_id="ph1">
+            <book_title> </book_title>    
+            <pages> </pages>
+            <genre> </genre>
+            <author_id> </author_id>
+            <language> </language>
+        </book>
+    </books> 
+    <authors>
+    </authors>
