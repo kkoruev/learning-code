@@ -14,7 +14,7 @@
   (send [user] put-profession_type ?profession_type))
 
 
-(defrule find-simalar-game-by-preferences
+(defrule add-games-over-age
   (object (is-a Game) (name_ ?name) (main_genre ?main_genre) (min_age ?age))
 =>
   (assert-it ?name ?main_genre ?age))
@@ -23,10 +23,15 @@
   (bind ?genre (class ?main_genre))
   (if(<= ?age (send [user] get-age))
     then
-    (assert (user ?name ?genre))
+    (assert (user age ?name ?genre))
   else 
   (printout t "Removing not suitable games" crlf))
 )
+
+(defrule test-rule
+  (user age)
+=>
+  (printout t "S"))
 
 
 (deffunction find-all-over-age()
