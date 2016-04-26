@@ -14,7 +14,18 @@ object Main {
   /**
    * Exercise 1
    */
-  def pascal(c: Int, r: Int): Int = ???
+  def pascal(c: Int, r: Int): Int = {
+    
+    def generateArray(r: Int, currentArray: Array[Int]): Array[Int] = 
+      if(r > 0) generateArray(r - 1, accFunc(Array[Int](), currentArray))
+      else currentArray
+    
+    def accFunc(accArr: Array[Int], arrNum: Array[Int]): Array[Int] = 
+      if(arrNum.length == 1) 1 +: accArr :+ 1
+      else accFunc(accArr :+ (arrNum.head + arrNum.tail.head), arrNum.tail)
+    
+    generateArray(r, Array(1))(c)
+  }
 
   /**
    * Exercise 2
