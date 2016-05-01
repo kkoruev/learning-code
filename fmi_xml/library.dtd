@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Library (publishing_houses, books, authors)>
+	<!ELEMENT publishing_houses (publishing_house)+ >
+		<!ELEMENT publishing_house (publishing_house_name, year, address, email, fax, mobile_number)>
+		<!ATTLIST publishing_house publishing_house_id ID #REQUIRED>
+        <!ATTLIST publishing_house facebook_id NMTOKEN #REQUIRED>
+		<!ELEMENT publishing_house_name (#PCDATA)>
+		<!ELEMENT year (#PCDATA)>		
+		<!ELEMENT address (#PCDATA)>
+		<!ELEMENT email (#PCDATA)>
+		<!ELEMENT fax (#PCDATA) >
+		<!ELEMENT mobile_number (#PCDATA) >
+		
+	<!ELEMENT books (book)+>
+		<!ELEMENT book (book_title, pages, genre, language, year_of_publishing, book_description, price)>
+		<!ATTLIST book book_id ID #REQUIRED>
+		<!ATTLIST book publishing_house_id IDREF #REQUIRED>
+		<!ATTLIST book author_id IDREF #REQUIRED>
+		<!ELEMENT book_title (#PCDATA)>
+		<!ELEMENT pages (#PCDATA)>
+		<!ELEMENT genre (#PCDATA)>
+		<!ELEMENT language (#PCDATA)>
+		<!ELEMENT year_of_publishing (#PCDATA)>
+		<!ELEMENT book_description (#PCDATA) >
+		<!ELEMENT price (#PCDATA) >
+		
+	<!ELEMENT authors (author)+>   
+		<!ELEMENT author (name, nickname, email, nationality, gender, birth_year,  age, author_decription, main_genre)>
+		<!ATTLIST author author_id ID #REQUIRED>
+		<!ELEMENT name (first_name, last_name)>
+		<!ELEMENT first_name (#PCDATA)>
+		<!ELEMENT last_name (#PCDATA)>
+		<!ELEMENT nickname (#PCDATA) >
+		<!ELEMENT nationality (#PCDATA)>
+		<!ELEMENT gender (#PCDATA)>
+		<!ELEMENT birth_year (#PCDATA) >
+		<!ELEMENT age (#PCDATA)>
+		<!ELEMENT author_decription (#PCDATA) >
+		<!ELEMENT main_genre (#PCDATA) >

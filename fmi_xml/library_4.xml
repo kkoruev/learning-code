@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Library SYSTEM "library.dtd" >
+<Library>
+    <publishing_houses>
+
+        <publishing_house publishing_house_id="ph1">
+            <publishing_house_name>Drama Press</publishing_house_name>
+            <year>1980</year>
+            <address>New York, st York 27</address>
+            <email>drama@gmail.com</email>
+        </publishing_house>
+
+        <publishing_house publishing_house_id="ph2">
+            <publishing_house_name>Big</publishing_house_name>
+            <year>2004</year>
+            <address>Sofia, st Makedonia 38</address>
+            <email>big@gmail.com</email>
+        </publishing_house>
+
+        <publishing_house publishing_house_id="ph3">
+            <publishing_house_name>Role Press</publishing_house_name>
+            <year>1950</year>
+            <address>Paris, st Gue Poe 12</address>
+            <email>role_press@goloe.fr</email>
+        </publishing_house>
+
+        <publishing_house publishing_house_id="ph4">
+            <publishing_house_name>Brute Force</publishing_house_name>
+            <year>2009</year>
+            <address>London, st Chelsea 12</address>
+            <email>force@yahoo.com</email>
+        </publishing_house>
+
+    </publishing_houses>
+
+    <books>
+
+        <book book_id="b1" publishing_house_id="ph1" author_id="a1">
+            <book_title>The Ballad of Les Darcy</book_title>
+            <pages>399</pages>
+            <genre>Biography</genre>
+            <language>English</language>
+        </book>
+
+	<book book_id="b2" publishing_house_id="ph3" author_id="a2">
+            <book_title>A History of Ukraine</book_title>
+            <pages>229</pages>
+            <genre>History </genre>
+            <language>Ukrainian</language>
+        </book>
+	
+	<book book_id="b3" publishing_house_id="ph2" author_id="a3">
+            <book_title>La Douleur Exquise</book_title>
+            <pages>156</pages>
+            <genre>Poetry</genre>
+            <language>French</language>
+        </book>
+
+	<book book_id="b4" publishing_house_id="ph4" author_id="a4">
+            <book_title>Shadow's End</book_title>
+            <pages>245</pages>
+            <genre>Fantasy</genre>
+            <language>English</language>
+        </book>
+
+	<book book_id="b5" publishing_house_id="ph3" author_id="a5">
+            <book_title>The Big Think Book</book_title>
+            <pages>356</pages>
+            <genre>Philosophy</genre>
+            <language>English</language>
+        </book>
+	
+	<book book_id="b6" publishing_house_id="ph4" author_id="a6">
+            <book_title>The Anatomical Shape of a Heart</book_title>
+            <pages>368</pages>
+            <genre>Art</genre>
+            <language>English</language>
+        </book>
+
+	<book book_id="b7" publishing_house_id="ph1" author_id="a7">
+            <book_title>Young Widows Club</book_title>
+            <pages>238</pages>
+            <genre>Music</genre>
+            <language>English</language>
+        </book>
+
+	<book book_id="b8" publishing_house_id="ph2" author_id="a8">
+            <book_title>The Old Man and the Sea</book_title>
+            <pages>435</pages>
+            <genre>Classic</genre>
+            <language>English</language>
+        </book>
+
+    </books>
+
+    <authors>
+
+        <author author_id="a1">
+            <name>
+                <first_name>James</first_name>
+                <last_name>Coburn</last_name>
+            </name>
+            <email>j.c.books@gmail.bg</email>
+            <nationality>American</nationality>
+            <gender>Male</gender>
+            <age>41</age>
+        </author>
+
+        <author author_id="a2">
+            <name>
+                <first_name>Serhii</first_name>
+                <last_name>Plokhy</last_name>
+            </name>
+            <email>serhii11@gmail.bg</email>
+            <nationality>Polish</nationality>
+            <gender>Male</gender>
+            <age>62</age>
+        </author>
+
+        <author author_id="a3">
+            <name>
+                <first_name>John</first_name>
+                <last_name>Rogue</last_name>
+            </name>
+            <email>j.rogue@abv.bg</email>
+            <nationality>French</nationality>
+            <gender>Male</gender>
+            <age>34</age>
+        </author>
+
+        <author author_id="a4">
+            <name>
+                <first_name>Thea</first_name>
+                <last_name>Harrison</last_name>
+            </name>
+            <email>t_har@abv.bg</email>
+            <nationality>American</nationality>
+            <gender>Female</gender>
+            <age>46</age>
+        </author>
+
+        <author author_id="a5">
+            <name>
+                <first_name>Peter</first_name>
+                <last_name>Cave</last_name>
+            </name>
+            <email>peter_c@abv.bg</email>
+            <nationality>Australian</nationality>
+            <gender>Male</gender>
+            <age>57</age>
+        </author>
+
+        <author author_id="a6">
+            <name>
+                <first_name>Jenn</first_name>
+                <last_name>Bennett</last_name>
+            </name>
+            <email>jenny_b@abv.bg</email>
+            <nationality>American</nationality>
+            <gender>Female</gender>
+            <age>28</age>
+        </author>
+
+        <author author_id="a7">
+            <name>
+                <first_name>Alexandra</first_name>
+                <last_name>Coutts</last_name>
+            </name>
+            <email>alex.co@abv.bg</email>
+            <nationality>American</nationality>
+            <gender>Female</gender>
+            <age>19</age>
+        </author>
+
+        <author author_id="a8">
+            <name>
+                <first_name>Ernest</first_name>
+                <last_name>Hemingway</last_name>
+            </name>
+            <email>hemingway@gmail.bg</email>
+            <nationality>American</nationality>
+            <gender>Male</gender>
+            <age>68</age>
+        </author>
+
+
+    </authors>
+</Library>

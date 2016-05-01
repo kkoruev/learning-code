@@ -1,0 +1,40 @@
+Име на автор: James Coburn
+Националност: American
+Възраст: 41
+Пол: Male
+
+Име на автор: Serhii Plokhy
+Националност: Polish
+Възраст: 62
+Пол: Male
+
+Име на автор: John Rogue
+Националност: French
+Възраст: 34
+Пол: Male
+
+Име на автор: Thea Harrison
+Националност: American
+Възраст: 46
+Пол: Female
+
+Име на автор: Peter Cave
+Националност: Australian
+Възраст: 57
+Пол: Male
+
+Име на автор: Jenn Bennett
+Националност: American
+Възраст: 28
+Пол: Female
+
+Име на автор: Alexandra Coutts
+Националност: American
+Възраст: 19
+Пол: Female
+
+Име на автор: Ernest Hemingway
+Националност: American
+Възраст: 68
+Пол: Male
+

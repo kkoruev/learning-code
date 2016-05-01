@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Library SYSTEM "library.dtd" >
+<Library>
+    <publishing_houses>
+
+        <publishing_house publishing_house_id="ph11">
+            <publishing_house_name>Glass Press</publishing_house_name>
+            <year>1980</year>
+            <address>Chicago, st Picadily 15</address>
+            <email>glass@gmail.com</email>
+        </publishing_house>
+
+        <publishing_house publishing_house_id="ph12">
+            <publishing_house_name>Golden Lions</publishing_house_name>
+            <year>2004</year>
+            <address>Sofia, st Maria Luiza 38</address>
+            <email>goldenlions@gmail.com</email>
+        </publishing_house>
+
+    </publishing_houses>
+
+    <books>
+
+        <book book_id="b1" publishing_house_id="ph12" author_id="a1">
+            <book_title>The Ballad of Les Darcy</book_title>
+            <pages>397</pages>
+            <genre>Biography</genre>
+            <language>English</language>
+        </book>
+
+	<book book_id="b2" publishing_house_id="ph12" author_id="a2">
+            <book_title>A Woman's War</book_title>
+            <pages>229</pages>
+            <genre>History </genre>
+            <language>English</language>
+        </book>
+	
+	<book book_id="b3" publishing_house_id="ph11" author_id="a3">
+            <book_title>Errata</book_title>
+            <pages>156</pages>
+            <genre>Poetry</genre>
+            <language>French</language>
+        </book>
+
+	<book book_id="b4" publishing_house_id="ph12" author_id="a4">
+            <book_title>Gateway to Fourline</book_title>
+            <pages>245</pages>
+            <genre>Fantasy</genre>
+            <language>English</language>
+        </book>
+
+	<book book_id="b5" publishing_house_id="ph11" author_id="a5">
+            <book_title>Battling the Gods</book_title>
+            <pages>356</pages>
+            <genre>Philosophy</genre>
+            <language>English</language>
+        </book>
+	
+	<book book_id="b6" publishing_house_id="ph12" author_id="a6">
+            <book_title>East of the Sun</book_title>
+            <pages>368</pages>
+            <genre>Art</genre>
+            <language>English</language>
+        </book>
+
+	<book book_id="b7" publishing_house_id="ph11" author_id="a7">
+            <book_title>Walking Heartbreak</book_title>
+            <pages>238</pages>
+            <genre>Music</genre>
+            <language>English</language>
+        </book>
+
+	<book book_id="b8" publishing_house_id="ph11" author_id="a8">
+            <book_title>Thing Explainer</book_title>
+            <pages>435</pages>
+            <genre>Science</genre>
+            <language>English</language>
+        </book>
+
+    </books>
+
+    <authors>
+
+        <author author_id="a1">
+            <name>
+                <first_name>Peter</first_name>
+                <last_name>Fitz</last_name>
+            </name>
+            <email>fitz_pet@yahoo.com</email>
+            <nationality>American</nationality>
+            <gender>Male</gender>
+            <age>41</age>
+        </author>
+
+        <author author_id="a2">
+            <name>
+                <first_name>Herman</first_name>
+                <last_name>Wouk</last_name>
+            </name>
+            <email>wouk.n@yahoo.com</email>
+            <nationality>American</nationality>
+            <gender>Male</gender>
+            <age>62</age>
+        </author>
+
+        <author author_id="a3">
+            <name>
+                <first_name>Lisa</first_name>
+                <last_name>Coutley</last_name>
+            </name>
+            <email>coutley.lisa@guen.fr</email>
+            <nationality>French</nationality>
+            <gender>Female</gender>
+            <age>34</age>
+        </author>
+
+        <author author_id="a4">
+            <name>
+                <first_name>Pam</first_name>
+                <last_name>Brondos</last_name>
+            </name>
+            <email>brondosgroup@abv.bg</email>
+            <nationality>American</nationality>
+            <gender>Male</gender>
+            <age>46</age>
+        </author>
+
+        <author author_id="a5">
+            <name>
+                <first_name>Tim</first_name>
+                <last_name>Whitmarsh</last_name>
+            </name>
+            <email>catapano.p@yahoo.com</email>
+            <nationality>American</nationality>
+            <gender>Male</gender>
+            <age>57</age>
+        </author>
+
+        <author author_id="a6">
+            <name>
+                <first_name>Noel</first_name>
+                <last_name>Daniel</last_name>
+            </name>
+            <email>noel.daniel@yahoo.com</email>
+            <nationality>American</nationality>
+            <gender>Male</gender>
+            <age>28</age>
+        </author>
+
+        <author author_id="a7">
+            <name>
+                <first_name>Sunniva</first_name>
+                <last_name>Dee</last_name>
+            </name>
+            <email>dee_h@yahoo.com</email>
+            <nationality>American</nationality>
+            <gender>Female</gender>
+            <age>24</age>
+        </author>
+
+        <author author_id="a8">
+            <name>
+                <first_name>Randall</first_name>
+                <last_name>Torn</last_name>
+            </name>
+            <email>randall_t@yahoo.com</email>
+            <nationality>American</nationality>
+            <gender>Male</gender>
+            <age>46</age>
+        </author>
+
+
+    </authors>
+</Library>

@@ -30,7 +30,17 @@ object Main {
   /**
    * Exercise 2
    */
-  def balance(chars: List[Char]): Boolean = ???
+  def balance(chars: List[Char]): Boolean = {
+    
+    def loop(counter: Int, chars: List[Char]): Int = 
+      if(counter < 0) counter
+      else if(chars.isEmpty) counter
+      else if(chars.head == '(') loop(counter + 1, chars.tail)
+      else if(chars.head == ')') loop(counter - 1, chars.tail)
+      else loop(counter, chars.tail)
+    
+    loop(0, chars) == 0
+  }
 
   /**
    * Exercise 3
