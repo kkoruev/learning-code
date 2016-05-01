@@ -5,4 +5,8 @@
 *.worksheet
 *.project
 *.cache*
-*target*
+lib_managed/**
+src/main/scala/common/**
+project/**
+submission/**
+target/**
