@@ -19,5 +19,5 @@ object practice1{
 	def sqrt(x: Double): Double =
 	  sqrtIter(1.0, x)                        //> sqrt: (x: Double)Double
 	
-	sqrt(4)                                   //> res0: Double = 2.0
+	sqrt(6)                                   //> res0: Double = 2.449489742783178
 }
