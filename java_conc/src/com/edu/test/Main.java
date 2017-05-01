@@ -1,5 +1,6 @@
 package com.edu.test;
 
+import com.edu.objects.DeadLock;
 import com.edu.objects.LongWrapper;
 
 public class Main {
@@ -43,9 +44,24 @@ public class Main {
         System.out.println(wrapper.getValue());
     }
 
+    public static void tryDeaLock() throws InterruptedException {
+        DeadLock obj = new DeadLock();
+        Runnable r1 = () -> obj.first();
+        Runnable r2 = () -> obj.second();
+
+        Thread t1 = new Thread(r1);
+        t1.start();
+
+        Thread t2 = new Thread(r2);
+        t2.start();
+
+        t1.join();
+        t2.join();
+    }
+
     public static void main(String[] args) {
         try {
-            tryRaceCond();
+            tryDeaLock();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
