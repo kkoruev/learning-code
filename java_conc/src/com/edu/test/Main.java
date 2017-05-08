@@ -2,6 +2,11 @@ package com.edu.test;
 
 import com.edu.objects.DeadLock;
 import com.edu.objects.LongWrapper;
+import com.edu.producer.consumer.pattern.Consumer;
+import com.edu.producer.consumer.pattern.Producer;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -59,9 +64,38 @@ public class Main {
         t2.join();
     }
 
+    public static void producerCondumerTest() throws InterruptedException {
+        List<Integer> list = new ArrayList<>();
+        Producer producer1 = new Producer(list);
+        Producer producer2 = new Producer(list);
+        Producer producer3 = new Producer(list);
+
+        Consumer consumer1 = new Consumer(list);
+        Consumer consumer2 = new Consumer(list);
+
+        Thread t1 = new Thread(producer1);
+        Thread t2 = new Thread(producer2);
+        Thread t3 = new Thread(producer3);
+
+        Thread t4 = new Thread(consumer1);
+        Thread t5 = new Thread(consumer2);
+
+        t1.start();
+        t2.start();
+        t3.start();
+        t4.start();
+        t5.start();
+
+        t1.join();
+        t2.join();
+        t3.join();
+        t4.join();
+        t5.join();
+    }
+
     public static void main(String[] args) {
         try {
-            tryDeaLock();
+            producerCondumerTest();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

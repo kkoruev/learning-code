@@ -3,16 +3,17 @@ package com.edu.producer.consumer.pattern;
 import sun.security.provider.SHA;
 
 import java.util.ArrayList;
+import java.util.List;
 
-    /**
+/**
  * Created by chris on 5/6/17.
  */
 public class Producer implements Runnable{
 
-    private final ArrayList<Integer> mSharedArray;
+    private final List<Integer> mSharedArray;
     private static final int MAX_SIZE = 10;
 
-    public Producer(ArrayList<Integer> sharedArray) {
+    public Producer(List<Integer> sharedArray) {
         mSharedArray = sharedArray;
     }
 
@@ -33,7 +34,10 @@ public class Producer implements Runnable{
                 mSharedArray.wait();
                 System.out.println("Done waiting " + Thread.currentThread().getName());
             }
+
             mSharedArray.add(i);
+            System.out.println("Adding " + Thread.currentThread().getName());
+            System.out.println("Size of array in producer " + mSharedArray.size());
             System.out.println("Notifying " + Thread.currentThread().getName());
             mSharedArray.notifyAll();
         }
