@@ -27,19 +27,22 @@ public class Producer implements Runnable{
         }
     }
 
-    public void produce(int i) throws InterruptedException {
+    private void produce(int i) throws InterruptedException {
         synchronized (mSharedArray) {
+            System.out.println("WIll try to add " + Thread.currentThread().getName());
             if (mSharedArray.size() >= MAX_SIZE) {
                 System.out.println("Waiting " + Thread.currentThread().getName());
                 mSharedArray.wait();
                 System.out.println("Done waiting " + Thread.currentThread().getName());
             }
-
-            mSharedArray.add(i);
-            System.out.println("Adding " + Thread.currentThread().getName());
-            System.out.println("Size of array in producer " + mSharedArray.size());
+            if (mSharedArray.size() < MAX_SIZE) {
+                mSharedArray.add(i);
+                System.out.println("Adding " + Thread.currentThread().getName());
+                System.out.println("Size of array in producer " + mSharedArray.size());
+            }
             System.out.println("Notifying " + Thread.currentThread().getName());
             mSharedArray.notifyAll();
+
         }
     }
 }
