@@ -10,11 +10,6 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm' 
-  };
-
   heroes: Hero[]; 
 
   selectedHero: Hero;
