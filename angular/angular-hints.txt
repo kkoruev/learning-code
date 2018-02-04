@@ -1,0 +1,6 @@
+ng generate module app-routing --flat --module=app
+ - add new module 
+ - flat - place in src/app instead of putting it its own folder
+ - --module=app - import in app module
+
+
