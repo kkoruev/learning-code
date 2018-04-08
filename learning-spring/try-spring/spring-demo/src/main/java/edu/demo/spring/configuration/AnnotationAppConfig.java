@@ -1,6 +1,7 @@
 package edu.demo.spring.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,10 +14,10 @@ import edu.demo.spring.entities.Football;
 @ComponentScan(basePackages = "edu.demo.spring")
 public class AnnotationAppConfig {
 
-	@Autowired
+	@Autowired @Qualifier("chelsea")
 	private Team home;
 	
-	@Autowired
+	@Autowired @Qualifier("arsenal")
 	private Team away;
 	@Bean
 	public Game game() {
