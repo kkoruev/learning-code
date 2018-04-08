@@ -1,0 +1,4 @@
+autowired - autowire by type first - works if there is exactly one bean of
+that type.
+
+componentScan - scan for classes down from basepackeges
