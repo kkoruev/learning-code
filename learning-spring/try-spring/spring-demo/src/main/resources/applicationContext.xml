@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="arsenal2" class="edu.demo.spring.entities.Arsenal"/>
+	<bean id="chelsea2" class="edu.demo.spring.entities.Chelsea"/>
+
+	<bean id="game" class="edu.demo.spring.entities.Football">
+		<constructor-arg index="0" ref="chelsea2"/>
+		<constructor-arg index="1" ref="arsenal2"/>
+	</bean>
+</beans>
