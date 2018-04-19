@@ -5,6 +5,9 @@
 	http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+	<bean id="teamFactory" class="edu.demo.spring.api.TeamFactory"/>
+
 	<bean id="arsenal2" class="edu.demo.spring.entities.Arsenal"/>
 	<bean id="chelsea2" class="edu.demo.spring.entities.Chelsea"/>
 
