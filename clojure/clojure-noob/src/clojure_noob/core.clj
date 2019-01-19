@@ -9,7 +9,7 @@
     (println "Its is true")
     (println "It is false"))
     (def customMap {:a 1 :b 2 :c 3})
-    (println (get customMap :c)))
+    (println (get customMap :b)))
 
 
 (defn train
