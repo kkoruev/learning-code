@@ -19,6 +19,9 @@ public class DynamicArray<T> {
     }
 
     public T get(int index) {
+        if (index >= len) {
+            throw new IndexOutOfBoundsException();
+        }
         return data[index];
     }
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.algo.implementations.DynamicArrayTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-07-10T15:44:42" hostname="ckoruev-z01" time="0.003">
+  <properties/>
+  <testcase name="testGetElementInvalidIndex" classname="edu.algo.implementations.DynamicArrayTest" time="0.001"/>
+  <testcase name="testSizeAfterRemoval" classname="edu.algo.implementations.DynamicArrayTest" time="0.0"/>
+  <testcase name="testInitialSize" classname="edu.algo.implementations.DynamicArrayTest" time="0.0"/>
+  <testcase name="testGetElementAfterRemoval" classname="edu.algo.implementations.DynamicArrayTest" time="0.0"/>
+  <testcase name="tesGetElement" classname="edu.algo.implementations.DynamicArrayTest" time="0.0"/>
+  <testcase name="pushElements_correctLen" classname="edu.algo.implementations.DynamicArrayTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
